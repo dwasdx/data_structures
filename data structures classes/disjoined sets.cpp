@@ -98,7 +98,7 @@ std::vector<clock_t> test_class(T *arr) {
     std::vector<clock_t> timings;
     for (auto size = sizes.begin(); size != sizes.end(); size++) {
         arr = new T(*size);
-        std::cout << "size " << *size << std::endl;
+//        std::cout << "size " << *size << std::endl;
         clock_t time = test_size(arr, *size);
         timings.push_back(time);
     }
