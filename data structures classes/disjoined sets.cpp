@@ -108,15 +108,15 @@ std::vector<clock_t> test_class(T *arr) {
 void test_all() {
     std::vector<clock_t> timings;
     ds_arrays *arr;
-    timings = test_class(arr);
-    for (int i = 0; i < timings.size(); i++) {
-        std::cout << "arrays size " << sizes[i] << " for " << timings[i] << std::endl;
-    }
-    ds_trees *tree;
-    timings = test_class(tree);
-    for (int i = 0; i < timings.size(); i++) {
-        std::cout << "trees size " << sizes[i] << " for " << timings[i] << std::endl;
-    }
+//    timings = test_class(arr);
+//    for (int i = 0; i < timings.size(); i++) {
+//        std::cout << "arrays size " << sizes[i] << " for " << timings[i] << std::endl;
+//    }
+//    ds_trees *tree;
+//    timings = test_class(tree);
+//    for (int i = 0; i < timings.size(); i++) {
+//        std::cout << "trees size " << sizes[i] << " for " << timings[i] << std::endl;
+//    }
     ds_trees_r *tree_r;
     timings = test_class(tree_r);
     for (int i = 0; i < timings.size(); i++) {
@@ -131,7 +131,8 @@ void test_all() {
 
 void fill_op_queue(std::vector<char> &queue, size_t size) {
     queue.clear();
-    size_t find_op_q = size - 1, union_op_q = size - 1;
+//    size_t find_op_q = size - 1, union_op_q = size - 1;
+    size_t find_op_q = (size - 1) * 1000, union_op_q = size - 1;
     while (find_op_q || union_op_q)
         if (rand() % 2 == 0 && find_op_q){
             queue.push_back('F');
