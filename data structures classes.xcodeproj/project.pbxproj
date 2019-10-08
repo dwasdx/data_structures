@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7514202E23434B8900DEA40B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7514202D23434B8900DEA40B /* main.cpp */; };
+		75D944CD23488290007A2F5C /* disjoined sets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 75D944CC23488290007A2F5C /* disjoined sets.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,14 @@
 /* Begin PBXFileReference section */
 		7514202A23434B8900DEA40B /* data structures classes */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "data structures classes"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7514202D23434B8900DEA40B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		7514203523434B9F00DEA40B /* singly linked lists.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "singly linked lists.hpp"; sourceTree = "<group>"; };
+		75142039234359FF00DEA40B /* double linked lists.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "double linked lists.hpp"; sourceTree = "<group>"; };
+		7514203B2343648100DEA40B /* circle linked lists.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "circle linked lists.hpp"; sourceTree = "<group>"; };
+		7514203E234365D700DEA40B /* stack list.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "stack list.hpp"; sourceTree = "<group>"; };
+		751420412343828A00DEA40B /* stack array.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "stack array.hpp"; sourceTree = "<group>"; };
+		751420442343859900DEA40B /* queue list.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "queue list.hpp"; sourceTree = "<group>"; };
+		755D3B4B23466C4F00FC3E87 /* disjoined sets.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = "disjoined sets.hpp"; sourceTree = "<group>"; };
+		75D944CC23488290007A2F5C /* disjoined sets.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "disjoined sets.cpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,14 @@
 			isa = PBXGroup;
 			children = (
 				7514202D23434B8900DEA40B /* main.cpp */,
+				751420442343859900DEA40B /* queue list.hpp */,
+				7514203B2343648100DEA40B /* circle linked lists.hpp */,
+				7514203523434B9F00DEA40B /* singly linked lists.hpp */,
+				75142039234359FF00DEA40B /* double linked lists.hpp */,
+				7514203E234365D700DEA40B /* stack list.hpp */,
+				751420412343828A00DEA40B /* stack array.hpp */,
+				755D3B4B23466C4F00FC3E87 /* disjoined sets.hpp */,
+				75D944CC23488290007A2F5C /* disjoined sets.cpp */,
 			);
 			path = "data structures classes";
 			sourceTree = "<group>";
@@ -120,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7514202E23434B8900DEA40B /* main.cpp in Sources */,
+				75D944CD23488290007A2F5C /* disjoined sets.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,7 +197,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -231,6 +249,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
 			name = Release;

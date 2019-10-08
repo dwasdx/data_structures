@@ -7,9 +7,18 @@
 //
 
 #include <iostream>
+#include <ctime>
+#include "singly linked lists.hpp"
+#include "double linked lists.hpp"
+#include "circle linked lists.hpp"
+#include "stack list.hpp"
+#include "stack array.hpp"
+#include "queue list.hpp"
+#include "disjoined sets.hpp"
+
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+    srand(time(NULL));
+    cout << "Default tests" << endl;
+    test_all();
 }
